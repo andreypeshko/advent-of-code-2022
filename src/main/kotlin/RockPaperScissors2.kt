@@ -10,10 +10,11 @@ fun main() {
             val me = line[2] - 'X' + 1
             val enemy = line[0] - 'A' + 1
 
+            sum += me
             when (enemy - me) {
-                in (-3..-1) -> sum += 6 + me // won
-                0 -> sum += 3 + me // draw
-                in (1..3) -> sum += 0 + me// lose
+                in (-3..-1) -> sum += 6 // won
+                0 -> sum += 3 // draw
+                in (1..3) -> sum += 0 // lose
             }
         }
         return sum
