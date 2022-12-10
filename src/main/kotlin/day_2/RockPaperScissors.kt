@@ -1,7 +1,9 @@
+package day_2
+
 import java.io.File
 
 fun main() {
-    val testInput = File("src/main/kotlin/rock_paper_scissors_input.txt").readText()
+    val testInput = File("src/main/kotlin/day_2/rock_paper_scissors_input.txt").readText()
 
     fun calculate(input: String): Int {
         var sum = 0

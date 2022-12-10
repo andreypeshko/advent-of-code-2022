@@ -1,7 +1,9 @@
+package day_2
+
 import java.io.File
 
 fun main() {
-    val testInput = File("src/main/kotlin/rock_paper_scissors_input.txt").readText()
+    val testInput = File("src/main/kotlin/day_2/rock_paper_scissors_input.txt").readText()
 
     fun calculate1(input: String): Int {
         var sum = 0
@@ -28,7 +30,6 @@ fun main() {
             val enemy = line[0] - 'A' + 1
 
             sum += result
-
             when (result - enemy) {
                 3, 2, -2 -> sum += 1 // rock
                 5, 1, -3 -> sum += 2 // paper
