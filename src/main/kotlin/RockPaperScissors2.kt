@@ -12,9 +12,9 @@ fun main() {
 
             sum += me
             when (enemy - me) {
-                in (-3..-1) -> sum += 6 // won
-                0 -> sum += 3 // draw
-                in (1..3) -> sum += 0 // lose
+                -1, 2 -> sum += 6 //won
+                0 -> sum += 3 //draw
+                -2, 1 -> sum += 0 //loss
             }
         }
         return sum
